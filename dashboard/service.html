@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Byon Veloce Wokshop</title>
+    <!-- icon -->
+    <link rel="icon" href="../dist/img/logo4.png" type="image/png">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../dist/plugins/fontawesome-free/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../dist/css/customStyle.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            prefix: 'tw-',
+            theme: {
+            extend: {
+                colors: {
+                primary: 'var(--main-color)',
+                secondary: 'var(--second-color)',
+                third: 'var(--third-color)',
+                fourth: 'var(--fourth-color)',
+                dark: 'var(--dark-color)',
+                light: 'var(--light-color)',
+
+                main: '#0054ff',
+                secound: '#a50005',
+                link: '#A7A7A7',
+                hover: '#C0C0C0',
+                tombol: '#7A33FF',
+                white2: '#E6E6E6',
+                
+                }
+            }
+            },
+        }
+    </script>
+    
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar  navbar-expand navbar-light tw-bg-main">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="" class="nav-link">Contact</a>
+        </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+            <form class="form-inline">
+                <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                </div>
+            </form>
+            </div>
+        </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar bg-black elevation-4">
+        <!-- Brand Logo -->
+        <a href="home.html" class="brand-link">
+        <img src="../dist/img/logo4.png" alt="" class="brand-image" >
+        <span class="brand-text font-weight-light">Byon Veloce</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar mt-4">
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+                <button class="btn btn-sidebar" style="color:#0054ff ; background-color: white; border-color: black;">
+                <i class="fas fa-search fa-fw"></i>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <i class="nav-icon fa-brands fa-slack"></i>                
+                <p>
+                    About Us
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="nav-icon fa-regular fa-calendar-days"></i>
+                <p>
+                    Our Schedule
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fa-solid fa-gears"></i>               
+                    <p>
+                    Our Service
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+                </a>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="./service.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Create a Services</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Coming Soon</p>
+                    </a>
+                </li>
+                </ul>
+            </li>
+            
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item">Our Services</li>
+                <li class="breadcrumb-item active">Create Service</li>
+                </ol>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="header-welcome tw-text-3xl tw-ml-10 tw-text-dark tw-font-bold animate__animated animate__lightSpeedInLeft">Welcome to Our Workshop</h1>
+                                    <div class="row tw-ml-10 tw-mt-5">
+                                        <h3 class="animate__animated animate__slideInLeft">Buat jadwal servis Anda di sini, kami memiliki montir yang ahli di bidangnya dan siap memberikan layanan terbaik untuk kendaraan Anda. </h3>     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 tw-mt-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                        <img class="tw-ml-10 tw-rounded-lg animate__animated animate__fadeInDown" src="../dist/img/img-service-1.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-6">
+                                        <img class="w-75 tw-ml-12 tw-mt-10 tw-rounded-lg animate__animated animate__fadeInUp" src="../dist/img/img-service-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="container my-5 tw-mr-8">
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <div class="form-floating mb-3 animate__animated animate__fadeInUpBig animate__faster">
+                                        <label for="nama">Nama</label>
+                                        <input class="form-control" id="nama" type="text" placeholder="Nama" data-sb-validations="required" />
+                                        <div class="invalid-feedback" data-sb-feedback="nama:required">Nama is required.</div>
+                                    </div>
+                                    <div class="form-floating mb-3 animate__animated animate__fadeInUpBig animate__fast">
+                                        <label for="nama">Date</label>
+                                        <input class="form-control" id="nama" type="date" placeholder="Date" data-sb-validations="required" />
+                                        <div class="invalid-feedback" data-sb-feedback="nama:required">Date is required.</div>
+                                    </div>
+                                    <div class="form-floating mb-3 animate__animated animate__fadeInUpBig ">
+                                        <select class="form-select" id="jenisMobil" aria-label="Jenis Mobil">
+                                            <option value="Mercedes">Mercedes</option>
+                                            <option value="Lamborghini">Lamborghini</option>
+                                            <option value="Ford">Ford</option>
+                                            <option value="GT-R">GT-R</option>
+                                            <option value="Supra">Supra</option>
+                                        </select>
+                                        <label for="jenisMobil">Jenis Mobil</label>
+                                    </div>
+                                    <div class="mb-3 animate__animated animate__fadeInUpBig">
+                                        <label class="form-label d-block">Layanan</label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" id="tuneUp" type="checkbox" name="layanan" data-sb-validations="required" />
+                                            <label class="form-check-label" for="tuneUp">Tune Up</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" id="scanning" type="checkbox" name="layanan" data-sb-validations="required" />
+                                            <label class="form-check-label" for="scanning">Scanning</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" id="boreUp" type="checkbox" name="layanan" data-sb-validations="required" />
+                                            <label class="form-check-label" for="boreUp">Bore Up</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" id="serviceRingan" type="checkbox" name="layanan" data-sb-validations="required" />
+                                            <label class="form-check-label" for="serviceRingan">Service Ringan</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" id="customBody" type="checkbox" name="layanan" data-sb-validations="required" />
+                                            <label class="form-check-label" for="customBody">Custom Body</label>
+                                        </div>
+                                        <div class="invalid-feedback" data-sb-feedback="layanan:required">One option is required.</div>
+                                    </div>
+                                    <div class="form-floating mb-3 animate__animated animate__fadeInUpBig ">
+                                        <select class="form-select" id="montir" aria-label="Montir">
+                                            <option value="Ahmad">Ahmad</option>
+                                            <option value="Mufli">Shidqi</option>
+                                            <option value="Al">Al</option>
+                                            <option value="Rosyid">James</option>
+                                        </select>
+                                        <label for="montir">Montir</label>
+                                    </div>
+                                    <div class="form-floating mb-3 animate__animated animate__fadeInUpBig animate__slow">
+                                        <textarea class="form-control" id="sampaikanPesanAndaKepadaMontirKami" type="text" placeholder="Sampaikan Pesan Anda Kepada Montir Kami" style="height: 10rem;" data-sb-validations="required"></textarea>
+                                        <label for="sampaikanPesanAndaKepadaMontirKami">Pesan</label>
+                                        <div class="invalid-feedback" data-sb-feedback="sampaikanPesanAndaKepadaMontirKami:required"></div>
+                                    </div>
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">Form submission successful!</div>
+                                            <p>To activate this form, sign up at</p>
+                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-none" id="submitErrorMessage">
+                                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                                    </div>
+                                    <div class="d-grid animate__animated animate__fadeInUpBig animate__slow">
+                                        <button class="btn tw-bg-main btn-lg" id="submitButton" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <strong>Copyright &copy; 2025 Kelompok 3.</strong> All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../dist/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+</body>
+</html>

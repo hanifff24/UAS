@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Byon Veloce Workshop</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <!-- icon -->
+        <link rel="icon" href="../dist/img/logo4.png" type="image/png">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <!-- tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              prefix: 'tw-',
+              theme: {
+                extend: {
+                  colors: {
+                    primary: 'var(--main-color)',
+                    secondary: 'var(--second-color)',
+                    third: 'var(--third-color)',
+                    fourth: 'var(--fourth-color)',
+                    dark: 'var(--dark-color)',
+                    light: 'var(--light-color)',
+                    dark2: 'var(--dark2-color)',
+
+                    main: '#0054ff',
+                    secound: '#a50005',
+                    link: '#A7A7A7',
+                    hover: '#C0C0C0',
+                    tombol: '#7A33FF',
+                    white2: '#E6E6E6',
+                    
+                  }
+                }
+              },
+            }
+        </script>
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="../dist/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="../dist/css/owl.carousel.min.css" rel="stylesheet">
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="../dist/css/stylelanding.css" rel="stylesheet">
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>Acuas</h1> -->
+                    <img src="../dist/img/Logo3.png" class="tw-rounded-2xl" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="../index.html" class="nav-item nav-link">Home</a>
+                        <a href="./about.html" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link active">Service</a>                        
+                        <a href="./contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="./login.html" class="nav-item nav-link">Login</a>
+
+                    </div>
+                    <button class="btn tw-bg-main btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <button type="button" class="btn tw-bg-main rounded-pill" onclick="login()">Order Now</button>
+                </div>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Service</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item active tw-text-main">Service</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Service -->
+        <div class="container-fluid tw-my-14" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="tw-text-3xl tw-text-dark tw-text-center">Our Service</p>
+                </div>
+            </div>
+            <div class="slide-container tw-my-10 swiper">
+                <div class="slide-content">
+                    <div class="img-wrapper swiper-wrapper">
+                        <div class="cardcon swiper-slide tw-my-20">
+                            <div class="img-content">
+                                <span class="overlay"></span>
+
+                                <div class="img-card">
+                                    <img class="images-card" src="../dist/img/tuneup.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-card">
+                                <a href="./login.html"><p class="name tw-text-dark2 tw-text-2xl">Tune Up</p></a>
+                                <p class="tw-pb-12">We provide professional tune up services to ensure your vehicle's performance remains optimal, fuel efficient, and ready to face the journey in the best conditions.</p>
+                            </div>
+                        </div>
+                        <div class="cardcon swiper-slide tw-my-20">
+                            <div class="img-content">
+                                <span class="overlay"></span>
+
+                                <div class="img-card">
+                                    <img class="images-card" src="../dist/img/Scanning.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-card">
+                                <a href="./login.html"><p class="name tw-text-dark2 tw-text-2xl">Scanning</p></a>
+                                <p>We provide vehicle scanning services using modern diagnostic tools to accurately detect problems with electronic systems and engines, ensuring fast and efficient repairs for optimal vehicle performance.</p>
+                            </div>
+                        </div>
+                        <div class="cardcon swiper-slide tw-my-20">
+                            <div class="img-content">
+                                <span class="overlay"></span>
+
+                                <div class="img-card">
+                                    <img class="images-card" src="../dist/img/Bore Up.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-card">
+                                <a href="./login.html"><p class="name tw-text-dark2 tw-text-2xl">Bore Up</p></a>
+                                <p class="tw-pb-24">mo minus, quam temporibus in dolores hic mollitia exercitationem suscipit eum quisquam eveniet.</p>
+                            </div>
+                        </div>
+                        <div class="cardcon swiper-slide tw-my-20">
+                            <div class="img-content">
+                                <span class="overlay"></span>
+
+                                <div class="img-card">
+                                    <img class="images-card" src="../dist/img/lightService.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-card">
+                                <a href="./login.html"><p class="name tw-text-dark2 tw-text-2xl">Light Services</p></a>
+                                <p class="tw-pb-6">We provide professional bore up services to increase your vehicle's engine capacity, resulting in greater power and more optimal performance according to your needs.</p>
+                            </div>
+                        </div>
+                        <div class="cardcon swiper-slide tw-my-20">
+                            <div class="img-content">
+                                <span class="overlay"></span>
+
+                                <div class="img-card">
+                                    <img class="images-card" src="../dist/img/about-4.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-card">
+                                <a href="./login.html"><p class="name tw-text-dark2 tw-text-2xl">Custom Body</p></a>
+                                <p  class="tw-pb-6">We also provide custom vehicle body services to provide a unique and personal appearance according to your style and needs, with neat and professional quality workmanship.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s"  data-aos="fade-up">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 align-items-center">
+                    <div class="col-lg-7">
+                        <img src="../dist/img/logo3.png" alt="Logo" class="w-25 tw-rounded-3xl">
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="./contact.html"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="./contact.html"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <p class="tw-text-light tw-text-xl">Byon Veloce</p>
+                                <p class="mb-3">Byon Veloce is an international standard sports car repair shop. We have mechanics with years of experience</p>
+                            </div>
+                            <div class="position-relative">
+                                <button type="button" class="btn tw-bg-main" onclick="login()">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <p class="tw-text-light tw-text-xl">About Us</p>
+                            <a href="./login.html"><i class="fas fa-angle-right me-2"></i> Dashboard</a>
+                            <a href="./login.html"><i class="fas fa-angle-right me-2"></i> Our Mechanic</a>
+                            <a href="./login.html"><i class="fas fa-angle-right me-2"></i> Create a Seervices</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <p class="tw-text-light tw-text-xl">About Us</p>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Thuesday:</h6>
+                                <p class="text-white mb-0">15.00 pm to 01.00 am</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">18.00 pm to 01.00 am</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Closed</h6>
+                                <p class="text-white mb-0">Friday & Sunday</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <strong>Copyright &copy; 2025 Kelompok 3.</strong> All rights reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/wow.min.js"></script> 
+    <script src="../dist/js/owl.carousel.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true
+                },
+            breakpoints:{
+                0:{
+                    slidesPerView: 1,
+                },
+                520:{
+                    slidesPerView: 2,
+                },
+                950:{
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+    <!-- Template Javascript -->
+    <script src="../dist/js/main.js"></script>
+    </body>
+
+</html>

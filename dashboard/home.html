@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Byon Veloce Workshop</title>
+
+    <!-- icon -->
+    <link rel="icon" href="../dist/img/logo4.png" type="image/png">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../dist/plugins/fontawesome-free/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../dist/css/customStyle.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          prefix: 'tw-',
+          theme: {
+            extend: {
+              colors: {
+                primary: 'var(--main-color)',
+                secondary: 'var(--second-color)',
+                third: 'var(--third-color)',
+                fourth: 'var(--fourth-color)',
+                dark: 'var(--dark-color)',
+                light: 'var(--light-color)',
+
+                main: '#0054ff',
+                secound: '#a50005',
+                link: '#A7A7A7',
+                hover: '#C0C0C0',
+                tombol: '#7A33FF',
+                white2: '#E6E6E6',
+                
+              }
+            }
+          },
+        }
+    </script>
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar  navbar-expand navbar-light tw-bg-main">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+            <form class="form-inline">
+                <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                </div>
+            </form>
+            </div>
+        </li>
+
+        
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar bg-black elevation-4">
+        <!-- Brand Logo -->
+        <a href="home.html" class="brand-link">
+        <img src="../dist/img/logo4.png" alt="" class="brand-image" >
+        <span class="brand-text font-weight-light tw-text-main">Byon Veloce</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar mt-4">
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+                <button class="btn btn-sidebar" style="color:#0054ff ; background-color: white; border-color: black;">
+                <i class="fas fa-search fa-fw"></i>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <i class="nav-icon fa-brands fa-slack"></i>                
+                <p>
+                    About Us
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="nav-icon fa-regular fa-calendar-days"></i>
+                <p>
+                    Our Schedule
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fa-solid fa-gears"></i>               
+                <p>
+                    Our Service
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+                </a>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="./service.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Create a Services</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Coming Soon</p>
+                    </a>
+                </li>
+                </ul>
+            </li>
+            
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+            <div class="col-sm-6">
+                
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+                <li class="breadcrumb-item active">Workshop</li>
+                </ol>
+            </div>
+            </div>
+        </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 ">
+                    <div class="h-100">
+                    <h1 class="display-6 mb-5">Welcome to Our Workshop</h1>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-wrench fa-3x m tw-text-dark"></i>
+                                    <h5 class="tw-ml-5">Expert Technician</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-gears fa-3x m tw-text-dark"></i>
+                                    <h5 class="tw-ml-5">Best Quality Services</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-4">Where ideas come to life and innovation knows no bounds. At Byon Veloce, we pride ourselves on pushing the limits of speed, precision, and technology to create solutions that redefine what’s possible. Join us as we explore the cutting-edge advancements that shape a smarter, faster, and more efficient tomorrow.</p>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-lg-square tw-bg-dark tw-rounded-2xl me-3">
+                                            <i class="fa fa-phone-alt tw-text-light fa-2x tw-p-2"></i>
+                                        </div>
+                                        <h5 class="mb-0 tw-ml-5">+012 345 6789</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-lg-square tw-bg-dark tw-rounded-2xl me-3">
+                                            <i class="fa fa-envelope text-white fa-2x tw-p-2"></i>
+                                        </div>
+                                        <h5 class="mb-0 tw-ml-5">Byvlce@example.com</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 " >
+                            <img class="img-fluid animate__animated animate__fadeInTopLeft animate__slow	2s"  src="../dist/img/about-1.jpeg">
+                        </div>
+                        <div class="col-6 ">
+                            <img class="img-fluid animate__animated animate__fadeInTopRight animate__slow	2s" src="../dist/img/about-2.jpeg">
+                        </div>
+                        <div class="col-6 ">
+                            <img class="img-fluid animate__animated animate__fadeInBottomLeft animate__slow	2s"  src="../dist/img/about-3.jpeg">
+                        </div>
+                        <div class="col-6 ">
+                            <img class="img-fluid animate__animated animate__fadeInBottomRight animate__slow	2s"  src="../dist/img/about-4.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.content -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <strong>Copyright &copy; 2025 Kelompok 3.</strong> All rights reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content-wrapper -->
+
+    
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../dist/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<script src="../dist/js/custom.js"></script>
+</body>
+</html>

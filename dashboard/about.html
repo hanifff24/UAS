@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Byon Veloce Wokshop</title>
+  <!-- icon -->
+  <link rel="icon" href="../dist/img/logo4.png" type="image/png">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../dist/plugins/fontawesome-free/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/customStyle.css">
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <script>
+      tailwind.config = {
+        prefix: 'tw-',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--main-color)',
+              secondary: 'var(--second-color)',
+              third: 'var(--third-color)',
+              fourth: 'var(--fourth-color)',
+              dark: 'var(--dark-color)',
+              light: 'var(--light-color)',
+
+              main: '#0054ff',
+              secound: '#a50005',
+              link: '#A7A7A7',
+              hover: '#C0C0C0',
+              tombol: '#7A33FF',
+              white2: '#E6E6E6',
+              
+            }
+          }
+        },
+      }
+  </script>
+
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar  navbar-expand navbar-light tw-bg-main">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="" class="nav-link">Contact</a>
+        </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+            <form class="form-inline">
+                <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                </div>
+            </form>
+            </div>
+        </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar bg-black elevation-4">
+        <!-- Brand Logo -->
+        <a href="home.html" class="brand-link">
+        <img src="../dist/img/logo4.png" alt="" class="brand-image" >
+        <span class="brand-text font-weight-light">Byon Veloce</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar mt-4">
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+                <button class="btn btn-sidebar" style="color:#0054ff ; background-color: white; border-color: black;">
+                <i class="fas fa-search fa-fw"></i>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link">
+                    <i class="nav-icon fa-brands fa-slack"></i>                
+                <p>
+                    About Us
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="schedule.html" class="nav-link">
+                    <i class="nav-icon fa-regular fa-calendar-days"></i>
+                <p>
+                    Our Schedule
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <i class="nav-icon fa-solid fa-gears"></i>               
+                <p>
+                    Our Service
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+                </a>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="service.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Create a Services</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Coming Soon</p>
+                    </a>
+                </li>
+                </ul>
+            </li>
+            
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section class="content-header">
+                            <div class="row">
+                                <div class="col-md-6">
+                                </div>
+                                <div class="col-md-6">
+                                    <ol class="breadcrumb float-sm-right">
+                                        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                                        <li class="breadcrumb-item active">About Us</li>
+                                        </ol>
+                                </div>
+                            </div>
+                            </section>
+                         <!-- Main content -->
+                            <div class="row">
+                                <div class="col-md-12 tw-text-3xl tw-text-dark tw-mb-14">
+                                    <h1 class="tw-ml-10">Welcome to Our Workshop</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    
+                                    <div class="row">
+                                        <div class="row g-4 d-flex tw-justify-center" style="display: flex; justify-content: center;">
+                                            <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                                <div class="team-item animate__animated animate__fadeInBottomLeft">
+                                                    <div class="team-img position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="../dist/img/muflih-4x5.jpg" alt="">
+                                                        <div class="team-social">
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-light text-center p-4">
+                                                        <h5>Muflih Alrasyid</h5>
+                                                        <span class="text-primary">Montir senior</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="team-item animate__animated animate__fadeInUp">
+                                                    <div class="team-img position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="../dist/img/hanif-4x5.jpg" alt="">
+                                                        <div class="team-social">
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-light text-center p-4">
+                                                        <h5>Shidqi Hanif</h5>
+                                                        <span class="text-primary">Montir senior</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="team-item animate__animated animate__fadeInUp">
+                                                    <div class="team-img position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="../dist/img/tri-4x5.jpg" alt="">
+                                                        <div class="team-social">
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-light text-center p-4">
+                                                        <h5>Tri Nur</h5>
+                                                        <span class="text-primary">Montir senior</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-item animate__animated animate__fadeInBottomRight">
+                                                    <div class="team-img position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="../dist/img/zaidan-4x5.jpg" alt="">
+                                                        <div class="team-social">
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                                            <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-light text-center p-4">
+                                                        <h5>Zaidaan</h5>
+                                                        <span class="text-primary">Montir senior</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <strong>Copyright &copy; 2025 Kelompok 3.</strong> All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../dist/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+</body>
+</html>
